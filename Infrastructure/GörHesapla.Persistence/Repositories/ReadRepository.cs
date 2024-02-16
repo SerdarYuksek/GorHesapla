@@ -17,9 +17,7 @@ namespace GörHesapla.Persistence.Repositories
         public async Task<int> CountAsync(Expression<Func<T, bool>>? predicate = null)
         {
             Table.AsNoTracking();
-            // return await Table.Where(u => ((User)(object)u).CompanyId == predicate.).CountAsync();
             if (predicate is not null) Table.Where(predicate);
-
             return await Table.CountAsync();
         }
 

@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GörHesapla.Api", "Presenta
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GörHesapla.MVC", "Presentation\GörHesapla.MVC\GörHesapla.MVC.csproj", "{7A6663F9-0CB3-45CB-9B8B-94658C06CE6B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GörHesapla.Infrastructure", "Infrastructure\GörHesapla.Infrastructure\GörHesapla.Infrastructure.csproj", "{E0CB00F4-3D8D-4517-A2C6-1E0C9877E0B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{7A6663F9-0CB3-45CB-9B8B-94658C06CE6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A6663F9-0CB3-45CB-9B8B-94658C06CE6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A6663F9-0CB3-45CB-9B8B-94658C06CE6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0CB00F4-3D8D-4517-A2C6-1E0C9877E0B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0CB00F4-3D8D-4517-A2C6-1E0C9877E0B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0CB00F4-3D8D-4517-A2C6-1E0C9877E0B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0CB00F4-3D8D-4517-A2C6-1E0C9877E0B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +61,7 @@ Global
 		{98820973-D6DE-413B-AABD-DF7A273EA624} = {11F0C7EE-A12E-4CCE-A9EC-3D795529EB59}
 		{7B822255-839D-48EF-9349-9FB93F6B58E5} = {A2F80A18-9105-4EB5-8891-C4546B4154BC}
 		{7A6663F9-0CB3-45CB-9B8B-94658C06CE6B} = {A2F80A18-9105-4EB5-8891-C4546B4154BC}
+		{E0CB00F4-3D8D-4517-A2C6-1E0C9877E0B4} = {11F0C7EE-A12E-4CCE-A9EC-3D795529EB59}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B5B989D1-8DBB-40EB-ACD2-6FE76002FA49}

@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Core\GörHesapla.Application\GörHesapla.Application.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\GörHesapla.Infrastructure\GörHesapla.Infrastructure.csproj" />
     <ProjectReference Include="..\..\Infrastructure\GörHesapla.Persistence\GörHesapla.Persistence.csproj" />
     <ProjectReference Include="..\GörHesapla.MVC\GörHesapla.MVC.csproj" />
   </ItemGroup>

@@ -1,5 +1,6 @@
 using GörHesapla.Application;
 using GörHesapla.Application.Exceptions;
+using GörHesapla.Infrastructure;
 using GörHesapla.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +14,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddPersistence(builder.Configuration);
 builder.Services.AddApplication();
+builder.Services.AddInfrastructure(builder.Configuration);
 
 var app = builder.Build();
 
