@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\GörHesapla.Application\GörHesapla.Application.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\GörHesapla.Persistence\GörHesapla.Persistence.csproj" />
+    <ProjectReference Include="..\GörHesapla.MVC\GörHesapla.MVC.csproj" />
+  </ItemGroup>
+
+</Project>
