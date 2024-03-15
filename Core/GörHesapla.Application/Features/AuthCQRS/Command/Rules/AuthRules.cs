@@ -29,5 +29,11 @@ namespace GörHesapla.Application.Features.AuthCQRS.Command.Rules
             return Task.CompletedTask;
 
         }
+        public Task EmailAddressShouldBeValid(User? user)
+        {
+            if (user is not null) throw new EmailAddressShouldBeValidException();
+            return Task.CompletedTask;
+
+        }
     }
 }

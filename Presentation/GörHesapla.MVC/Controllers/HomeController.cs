@@ -1,32 +1,31 @@
-using GörHesapla.MVC.Models;
-using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace GörHesapla.MVC.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-
-        public IActionResult Index()
+        public IActionResult MainPage()
         {
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult CashPage(int id)
         {
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        public IActionResult ProductManagment(int id)
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View();
+        }
+
+        public IActionResult StockManagement(int id)
+        {
+            return View();
+        }
+        public IActionResult ContactPage(int id)
+        {
+            return View();
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using GörHesapla.Application.Features.AuthCQRS.Command.Login;
+using GörHesapla.Application.Features.AuthCQRS.Command.LogOut;
 using GörHesapla.Application.Features.AuthCQRS.Command.RefreshToken;
 using GörHesapla.Application.Features.AuthCQRS.Command.Register;
 using MediatR;
@@ -39,7 +40,7 @@ namespace GörHesapla.Api.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> EmailConfirmation(EmailConfirmationCommandRequest request)
+        public async Task<IActionResult> LogOut(LogOutCommandRequest request)
         {
             return Ok(await mediator.Send(request));
         }

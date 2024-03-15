@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <title>Giriş Sayfası</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form action="/Account/SignUp" method="post">
+                <h1>Hesap Oluştur</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-apple"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <span>Ya da email ile kayıt yapın</span>
+                <input type="text" placeholder="Ad Soyad">
+                <input type="email" placeholder="E-mail">
+                <input type="password" placeholder="Şifre">
+                <button>Kayıt Ol</button>
+            </form>
+        </div>
+
+        <div class="form-container sign-in">
+            <form action="/Account/SingIn" method="post">
+                <h1>Giriş Yap</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-apple"></i> 
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <span>veya email ve şifre ile giriş yap</span>
+                <input type="email" placeholder="E-mail">
+                <input type="password" placeholder="Şifre">
+                <a href="#">Şifreni Mi Unuttun?</a>
+                <button>Giriş Yap</button>
+            </form>
+        </div>
+
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Tekrar Hoşgeldin!</h1>
+                    <p>Giriş Yapmak ve sayfaya erişmek için tıklayınız</p>
+                    <button id="login" class="hidden">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Merhaba,Dostum!</h1>
+                    <p>Hesabın yok mu kaydolmak için hemen tıkla</p>
+                    <button id="register" class="hidden">Kayıt Ol</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+<script src="~/js/script.js"></script>

@@ -3,7 +3,6 @@ using GörHesapla.Application.Features.Users.Command.UpdateUser;
 using GörHesapla.Application.Features.Users.Queries.GetAllUsers;
 using GörHesapla.Application.Features.Users.Queries.GetUser;
 using GörHesapla.Application.Features.Users.Queries.GetUsersCount;
-using GörHesapla.Application.Features.UsersCQRS.Command.CreateUser;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -32,13 +31,6 @@ namespace GörHesapla.Api.Controllers
         {
             var response = await mediator.Send(request);
             return Ok(response);
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> CreateUser(CreateUserCommandRequest request)
-        {
-            await mediator.Send(request);
-            return Ok();
         }
 
         [HttpPut]
